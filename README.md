@@ -1,6 +1,6 @@
 # Patriarchal Gender Norms Model: Analysis & Replication 
 
-> **Project Status:** Complete.(Might add quality of life improvements later)
+> **Project Status:** Complete. (Might add quality of life improvements later)
 
 > **Key Finding:** The original paper's equilibrium relies on physically impossible labor hours ($>24h/day$). When time constraints are enforced, the predicted gender education gap decreases by a significant margin.
 
