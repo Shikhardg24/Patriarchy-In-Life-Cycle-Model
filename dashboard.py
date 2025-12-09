@@ -63,9 +63,9 @@ with tab1:
     # Preference Display
     col_p1, col_p2 = st.columns(2)
     with col_p1:
-        st.info(f"👨 **H-Man's Choice:** {pref_hm}")
+        st.info(f"**H-Man's Choice:** {pref_hm}")
     with col_p2:
-        st.info(f"👩 **H-Woman's Choice:** {pref_hf}")
+        st.info(f"**H-Woman's Choice:** {pref_hf}")
     
     st.markdown("---")
 

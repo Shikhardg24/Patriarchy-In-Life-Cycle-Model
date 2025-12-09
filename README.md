@@ -1,6 +1,6 @@
 # Critical Analysis & Replication: Patriarchal Gender Norms Model
 
-> **Project Status:** Complete.
+> **Project Status:** Complete.(Might add quality of life improvements later)
 > **Key Finding:** The original paper's equilibrium relies on physically impossible labor hours ($>24h/day$). When time constraints are enforced, the predicted gender education gap decreases by a significant margin.
 
 ## Overview
@@ -19,7 +19,9 @@ I built an interactive **Streamlit Dashboard** to visualize the divergence betwe
 * **Monte Carlo Analysis:** Simulates 20 parallel generations to test Global Stability.
 * **Nash Equilibrium Solver:** Visualizes Best Response curves to find the stable population state.
 
-*(Insert screenshot of Streamlit Dashboard here)*
+![alt text](<Screenshot 2025-12-10 042037.png>)
+![alt text](<Screenshot 2025-12-10 042601.png>)
+![alt text](<Screenshot 2025-12-10 042622.png>)
 
 ## Key Research Findings
 
@@ -47,7 +49,7 @@ In "Reality Mode," where time constraints are enforced, the "Patriarchal Equilib
 1. Clone the repository:
 
     ```bash
-    git clone [https://github.com/yourusername/rethinking-patriarchy-model.git](https://github.com/yourusername/rethinking-patriarchy-model.git)
+    git clone [https://github.com/Shikhardg24/Patriarchy-In-Life-Cycle-Model](https://github.com/Shikhardg24/Patriarchy-In-Life-Cycle-Model)
     ```
 
 2. Install dependencies:
