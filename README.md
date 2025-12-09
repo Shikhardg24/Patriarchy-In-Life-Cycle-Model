@@ -1,6 +1,7 @@
-# Analysis & Replication: Patriarchal Gender Norms Model
+# Patriarchal Gender Norms Model: Analysis & Replication 
 
 > **Project Status:** Complete.(Might add quality of life improvements later)
+
 > **Key Finding:** The original paper's equilibrium relies on physically impossible labor hours ($>24h/day$). When time constraints are enforced, the predicted gender education gap decreases by a significant margin.
 
 ## Overview
@@ -20,10 +21,10 @@ I built an interactive **Streamlit Dashboard** to visualize the divergence betwe
 * **Nash Equilibrium Solver:** Visualizes Best Response curves to find the stable population state.
 
 ![Home Screen](<src/Screenshot 2025-12-10 042037.png>)
-
+-----------
 ![Education Level Simulation](<src/Screenshot 2025-12-10 042601.png>)
-
-![Monte Carlo Runs](<src/Screenshot 2025-12-10 042622.png>)
+-----------
+![**Monte Carlo Runs**](<src/Screenshot 2025-12-10 042622.png>)
 
 ## Key Research Findings
 
