@@ -21,8 +21,10 @@ I built an interactive **Streamlit Dashboard** to visualize the divergence betwe
 * **Nash Equilibrium Solver:** Visualizes Best Response curves to find the stable population state.
 
 ![Home Screen](<src/Screenshot 2025-12-10 042037.png>)
+
 -----------
 ![Education Level Simulation](<src/Screenshot 2025-12-10 042601.png>)
+
 -----------
 ![**Monte Carlo Runs**](<src/Screenshot 2025-12-10 042622.png>)
 
