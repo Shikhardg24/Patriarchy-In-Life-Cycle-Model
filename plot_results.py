@@ -200,8 +200,3 @@ def plot_best_response(gamma=1.2, w=2.0):
     plt.xlim(0, 1)
     plt.ylim(0, 1)
     plt.show()
-
-if __name__ == "__main__":
-    # You can run either or both functions here
-    plot_indifference_curves()
-    # plot_best_response()

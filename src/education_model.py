@@ -12,11 +12,11 @@ def calculate_expected_values(pm, pf, gamma, w, mode='paper'):
     u_lh = solve_household('L', 'H', gamma, w, ignore)
     u_ll = solve_household('L', 'L', gamma, w, ignore)
     
-    # 2. Get Utilities for being Single (The "Floor")
+    # 2. Get Utilities for being Single
     u_h_single = get_single_utility('H', w)
     u_l_single = get_single_utility('L', w)
 
-    # --- CRITICAL FIX: THE SINGLEHOOD CHECK ---
+    # --- THE SINGLEHOOD CHECK ---
     # Agents only marry if Utility(Marriage) > Utility(Single).
     # If a match is 'Infeasible' (physically impossible), they stay Single.
     

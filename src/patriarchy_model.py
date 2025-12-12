@@ -26,7 +26,7 @@ def solve_household(w_man_type, w_woman_type, gamma, w_val, ignore_constraints=F
         is_physically_possible = False
 
     # 4. DECISION LOGIC
-    # If we want the Paper's fantasy numbers, we return the analytical result even if impossible.
+    # If we want the Paper's numbers, we return the analytical result even if impossible.
     if ignore_constraints:
         return res_analytical
 
@@ -68,7 +68,7 @@ def _solve_analytical_core(wx, wy, gamma):
         'l_woman': ly, 'n_woman': ny
     }
 
-# --- INTERNAL HELPER: The Reality Check (Corner Solution) ---
+# --- INTERNAL HELPER: Reality (Corner Solution) ---
 def _solve_numerical_corner(wx, wy, gamma):
     """
     Maximizes utility subject to strict T <= 1 constraints.
@@ -80,16 +80,16 @@ def _solve_numerical_corner(wx, wy, gamma):
         nx, ny, lx, ly = x
         
         # Penalties for bounds violations (soft constraints)
-        if nx < 1e-6 or ny < 1e-6 or lx < 1e-6 or ly < 1e-6: return 1e9
+        if nx < 1e-6 or ny < 1e-6 or lx < 1e-6 or ly < 1e-6: return 1e11
         
         # Physics of Marriage Value
         sqrt_term = np.sqrt(nx) + np.sqrt(ny)
         v = sqrt_term**2 - gamma * nx
-        if v <= 1e-6: return 1e9
+        if v <= 1e-6: return 1e11
         
         # Budget Constraint (Consumption)
         income = wx*(1 - lx - nx) + wy*(1 - ly - ny)
-        if income <= 1e-6: return 1e9
+        if income <= 1e-6: return 1e11
         c = income / 2  # Equal sharing in unitary model
         
         # Utility Function: 2*ln(c) + ln(lx) + ln(ly) + 2*ln(v)

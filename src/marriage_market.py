@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.optimize import brentq
 from src.patriarchy_model import solve_household, get_single_utility
+#The actions of this model are already performed in the plot_results.py file
 
 def find_exact_indifference_point(gamma, agent_type, mode='paper'):
     """

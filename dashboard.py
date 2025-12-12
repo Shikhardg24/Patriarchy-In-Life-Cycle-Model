@@ -25,15 +25,15 @@ st.sidebar.title("🔬 Control Panel")
 mode_selection = st.sidebar.radio("Simulation Logic:", ("Paper Mode (Unconstrained)", "Reality Mode (Physically Valid)"))
 MODE = 'paper' if "Paper" in mode_selection else 'reality'
 st.sidebar.markdown("---")
-gamma_input = st.sidebar.slider("Bias Parameter (γ)", 0.0, 5.0, 0.5, 0.1)
-w_input = st.sidebar.slider("Wage Ratio (w)", 1.0, 25.0, 15.0, 0.5)
+gamma_input = st.sidebar.slider("Bias Parameter (γ)", 0.0, 5.0, 0.5, 0.05)
+w_input = st.sidebar.slider("Wage Ratio (w)", 1.0, 25.0, 5.0, 0.25)
 
 # --- MAIN HEADER ---
 st.title(f"Research Verification: {mode_selection}")
 st.markdown(f"Currently simulating: **{MODE.upper()}** logic.")
 
 # --- TABS ---
-tab1, tab2, tab3 = st.tabs(["🏠 Full Marriage Market Analysis", "🎓 Education Equilibrium", "📈 Advanced Graphs"])
+tab1, tab2, tab3 = st.tabs(["🏠 Marriage Market Analysis", "🎓 Education Equilibrium", "📈 Best Response Function Graph"])
 
 # ==========================================
 # TAB 1: ALL 4 HOUSEHOLDS
